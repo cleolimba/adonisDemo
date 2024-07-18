@@ -5,6 +5,21 @@ export default class Post extends BaseModel {
   @column({ isPrimary: true })
   declare id: number
 
+  @column()
+  declare title: string
+
+  @column()
+  declare description: string
+
+  @column()
+  declare authorId: number
+
+  @column()
+  declare imageUrl: string
+
+  @column()
+  declare slug: string
+
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime
 

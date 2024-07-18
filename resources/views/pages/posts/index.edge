@@ -14,5 +14,9 @@
         </ul>
     </header>
   <h1> {{title}} </h1>
+  @each(post in posts)
+    <p>{{post.title}}</p>
+    <img src={{post.imageUrl}} alt="image">
+  @end
 </body>
 </html>
